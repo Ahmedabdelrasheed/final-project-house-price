@@ -5,9 +5,9 @@ import pandas as pd
 import numpy as np
 
 # Load model and preprocessors
-model = load_model("model/model.keras")
-sc = pl.load(open("model/scaler.pkl", 'rb'))
-encoder = pl.load(open("model/encoder.pkl", 'rb'))
+model = load_model("model.keras")
+sc = pl.load(open("scaler.pkl", 'rb'))
+encoder = pl.load(open("encoder.pkl", 'rb'))
 
 st.title("NY HOUSE PRICING")
 
